@@ -65,11 +65,11 @@ The pilot plots show exactly the failure modes the full benchmark is designed to
 
 ![Failure mode: model mismatch — wrong-model KF drifts, PF tracks](plots/failure_mode_model_mismatch_kf_vs_pf.png)
 
-**Noise escalation:** Performance degrades as observation noise increases. The pilot gives a taste; the full benchmark spans easy to hard so you can report curves and compare methods at scale.
+**Shock-event miss:** A shock-blind model misses abrupt jumps and volatility spikes (market-style event risk). The full benchmark includes many such regimes so you can measure detection delay and validate that your method reacts to sudden changes.
 
-![Performance under noise escalation](plots/noise_escalation_curves.png)
+![Failure mode: shock-blind model misses abrupt jumps](plots/failure_mode_event_shock_miss_kf.png)
 
-**More in the [plots/](plots/) folder:** false confidence (KF bands missing the truth), shock-event miss (models blind to abrupt jumps), and an example latent-vs-observed trajectory. The full benchmark provides hundreds of such scenarios for rigorous evaluation and papers.
+**More in the [plots/](plots/) folder:** false confidence (KF bands missing the truth), noise escalation curves, and an example latent-vs-observed trajectory. The full benchmark provides hundreds of such scenarios for rigorous evaluation and papers.
 
 ---
 
