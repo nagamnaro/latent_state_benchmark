@@ -1,0 +1,16 @@
+{
+  "pack_generator": "generate_large_benchmark_pack.py",
+  "product": "pilot",
+  "command": "--product pilot --num_sequences 10 --num_timesteps 200 --dt 0.01 --out_dir ./pilot_pack --base_seed 42",
+  "num_sequences": 10,
+  "num_timesteps": 200,
+  "dt": 0.01,
+  "t_end": 2.0,
+  "base_seed": 42,
+  "generated_utc": "2026-02-09T19:12:04.793135Z",
+  "schema": {
+    "data_csv": "Each <run_id>_data.csv: columns time, obs_0[, obs_1], x_0, x_1, regime. Rows = num_timesteps + 1.",
+    "metadata_json": "Each <run_id>_metadata.json: run_id, seed, dynamics_type, observation_type, t_start, t_end, dt, state_dim, obs_dim, observation_noise_std, missing_prob, delay_steps, n_steps, n_times.",
+    "metrics_summary_csv": "One row per sequence: run_id, seed, dynamics_type, observation_noise_std, delay_steps, missing_prob, obs_dim, state_dim, n_timesteps, rmse_kf, rmse_ekf, rmse_pf, rmse_nn, false_conf_kf, calibration_kf, regime_delay_mean."
+  }
+}

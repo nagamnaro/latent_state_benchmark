@@ -1,0 +1,19 @@
+{
+  "run_id": "seq_000006",
+  "seed": 48,
+  "regime_seed": null,
+  "t_start": 0.0,
+  "t_end": 2.0,
+  "dt": 0.01,
+  "state_dim": 2,
+  "obs_dim": 2,
+  "observation_noise_std": 0.10812175685452619,
+  "missing_prob": 0.028832810393024412,
+  "delay_steps": 2,
+  "dynamics_type": "DampedOscillatorODE",
+  "observation_type": "LinearObservationModel",
+  "observation_model_is_invertible": true,
+  "observation_model_lossy_reason": "",
+  "n_steps": 200,
+  "n_times": 201
+}
